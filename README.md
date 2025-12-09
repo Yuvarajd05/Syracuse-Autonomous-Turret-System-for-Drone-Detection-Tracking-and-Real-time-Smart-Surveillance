@@ -1,145 +1,108 @@
-Syracuse: Autonomous Turret System for Drone
-Detection & Tracking and Real-time Smart
-Surveillance
+🚀🛡️ SYRACUSE: Autonomous Turret System for Drone Detection & Tracking and Real-Time Smart Surveillance 🤖📡
 
-📌 Project Overview
+🌟 Project Overview
 
-This project implements a real-time vision-based drone detection and tracking system using deep learning and embedded systems. The system detects drones from a live camera feed using the YOLOv11-m model and continuously tracks the target using a servo-controlled pan–tilt mechanism driven by an Arduino microcontroller. A laser module and on-screen indicator are used to simulate target engagement in a safe and legally compliant manner.
+This project presents a real-time vision-based drone detection and tracking system powered by deep learning and embedded systems. Using the YOLOv11-m object detection model, the system detects drones from a live camera feed and continuously tracks them using a servo-controlled pan–tilt mechanism operated by an Arduino UNO.
 
-🎯 Objectives
+To ensure safety and legality, the project uses a low-power laser and on-screen indicators to simulate target engagement—no physical firing or drone disabling is involved.
 
-Detect drones in real time using deep learning
+🎯 Key Objectives
 
-Track drone movement smoothly using pan–tilt control
+✅ Detect drones in real time using deep learning
+✅ Track drone movement smoothly using pan–tilt control
+✅ Apply PID control for stable motion tracking
+✅ Simulate target engagement using laser & UI
+✅ Build a low-cost, modular surveillance prototype
 
-Implement motion-aware tracking with PID control
+🧰 Hardware Requirements
 
-Simulate target engagement using laser and UI indicators
-
-Develop a low-cost and modular surveillance prototype
-
-🛠️ Hardware Requirements
-
-Arduino UNO
-
-Camera Module / USB Webcam
-
-MG995 Servo Motors (Pan & Tilt)
-
-Servo Bracket Mount
-
-Low-Power Laser Module
-
-E88 PRO RC Drone (for testing)
-
-Jumper Wires, Breadboard
-
-Laptop / PC
+🔧 Arduino UNO
+📷 USB Camera / Webcam
+⚙️ MG995 Servo Motors (Pan & Tilt)
+🧱 Servo Bracket Mount
+🔴 Low-Power Laser Module
+🚁 E88 PRO RC Drone (Testing Purpose)
+🔌 Jumper Wires & Breadboard
+💻 Laptop / PC
 
 💻 Software Requirements
 
-Python 3.x
+🐍 Python 3.x
+📷 OpenCV
+🔥 Ultralytics YOLO (YOLOv11-m)
+🧠 PyTorch
+📊 NumPy
+🔌 PySerial
+⚙️ Arduino IDE
 
-OpenCV
+🏗️ System Architecture
 
-Ultralytics YOLO (YOLOv11-m)
-
-PyTorch
-
-NumPy
-
-Arduino IDE
-
-⚙️ System Architecture
-
-Camera captures live video
-
-YOLOv11-m detects the drone
-
-Tracking logic computes drone position
-
-PID controller generates movement commands
-
-Commands sent to Arduino via Serial communication
-
-Arduino controls servos and laser module
+📸 Camera captures live video
+➡️ YOLOv11-m detects the drone
+➡️ Tracking logic calculates drone position
+➡️ PID controller generates control signals
+➡️ Commands sent to Arduino via Serial
+➡️ Arduino moves servos & controls laser
 
 🧠 Algorithms Used
 
-YOLOv11-m for object detection
-
-Motion-aware tracking
-
-PID control for smooth pan–tilt movement
-
-Serial communication protocol for hardware control
+🟢 YOLOv11-m – Real-time object detection
+🟡 Motion-Aware Tracking – Smooth target following
+🔵 PID Control – Stable pan–tilt movement
+🔴 Serial Communication – Software ↔ Hardware
 
 ▶️ How to Run the Project
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/drone-detection-tracking.git
 cd drone-detection-tracking
 
-2️⃣ Install Dependencies
+2️⃣ Install Python Dependencies
 pip install opencv-python numpy torch ultralytics pyserial
 
 3️⃣ Upload Arduino Code
 
-Open Arduino IDE
+🔹 Open Arduino IDE
+🔹 Upload the provided .ino file to Arduino UNO
 
-Upload the Arduino sketch to Arduino UNO
-
-4️⃣ Run Python Script
+4️⃣ Run the Python Program
 python main.py
 
-✅ Features
+✨ Key Features
 
-Real-time drone detection
-
-Smooth servo tracking
-
-Automatic search mode
-
-FPS display and UI overlay
-
-Safe simulated engagement
+🚀 Real-time drone detection
+🎯 Smooth and accurate tracking
+🔄 Automatic search mode
+📊 FPS display & UI overlays
+🔴 Safe laser-based target indication
 
 ⚠️ Limitations
 
-Works best in good lighting conditions
-
-Optimized for single-drone tracking
-
-Performance depends on camera quality
+⚡ Works best in good lighting conditions
+🚁 Optimized for single-drone tracking
+📷 Performance depends on camera quality
 
 🔮 Future Enhancements
 
-Multi-drone tracking
+🔹 Multi-drone tracking support
+🌡️ Integration of thermal / radar sensors
+📦 Deployment on edge devices (Jetson, Raspberry Pi)
+🌙 Improved low-light detection
 
-Integration of thermal or radar sensors
+📌 Applications
 
-Deployment on embedded edge devices
+🛡️ Smart surveillance systems
+🎯 Defense training simulations
+🎓 Academic research & learning
+🤖 Computer vision demos
 
-Improved detection in low-light conditions
+👨‍💻 Author
 
-📚 Applications
+👤 Yuvaraj D
+🎓 Final Year Project
+🏫 Department of Computer Science & Design
+🏛️ Canara Engineering College, Mangaluru
 
-Smart surveillance systems
+📜 License & Disclaimer
 
-Defense training simulations
-
-Research and education
-
-Computer vision demonstrations
-
-👨‍💻 Authors
-
-Yuvaraj D
-
-Final Year Project – Department of Computer Science and Design
-
-Canara Engineering College, Mangaluru
-
-📜 License
-
-This project is developed for educational and research purposes only.
-No physical drone-disabling mechanisms are included.
+📖 This project is developed strictly for educational & research purposes.
+🚫 No physical drone-neutralization mechanisms are included.
