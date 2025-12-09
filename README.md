@@ -1,10 +1,14 @@
 🚀🛡️ SYRACUSE: Autonomous Turret System for Drone Detection & Tracking and Real-Time Smart Surveillance 🤖📡
+
+
 🌟 Project Overview
 
 This project presents a real-time, vision-based drone detection and tracking system powered by deep learning and embedded systems. Using the YOLOv11-m object detection model, the system detects drones from a live camera feed and continuously tracks them using a servo-controlled pan–tilt mechanism operated by an Arduino UNO.
 
 To ensure safety and legal compliance, the system uses a low-power laser and on-screen UI indicators to simulate target engagement.
 ❌ No physical firing or drone-disabling mechanism is involved.
+
+
 
 🎯 Key Objectives
 
@@ -17,6 +21,9 @@ To ensure safety and legal compliance, the system uses a low-power laser and on-
 ✅ Simulate target engagement using laser & UI
 
 ✅ Build a low-cost, modular surveillance prototype
+
+
+
 
 🧰 Hardware Requirements
 
@@ -36,6 +43,9 @@ To ensure safety and legal compliance, the system uses a low-power laser and on-
 
 💻 Laptop / PC
 
+
+
+
 💻 Software Requirements
 
 🐍 Python 3.x
@@ -52,6 +62,9 @@ To ensure safety and legal compliance, the system uses a low-power laser and on-
 
 ⚙️ Arduino IDE
 
+
+
+
 🏗️ System Architecture
 
 📸 Camera captures live video
@@ -66,6 +79,8 @@ To ensure safety and legal compliance, the system uses a low-power laser and on-
 
 🤖 Arduino moves servos & controls laser
 
+
+
 🧠 Algorithms Used
 
 🟢 YOLOv11-m – Real-time object detection
@@ -75,6 +90,9 @@ To ensure safety and legal compliance, the system uses a low-power laser and on-
 🔵 PID Control – Stable pan–tilt movement
 
 🔴 Serial Communication – Software ↔ Hardware
+
+
+
 
 ▶️ How to Run the Project
 1️⃣ Clone the Repository
@@ -93,6 +111,9 @@ Upload the provided .ino file to Arduino UNO
 4️⃣ Run the Python Program
 python main.py
 
+
+
+
 📌 Applications
 
 🛡️ Smart surveillance systems
@@ -102,6 +123,9 @@ python main.py
 🎓 Academic research & learning
 
 🤖 Computer vision demonstrations
+
+
+
 
 📜 License & Disclaimer
 
