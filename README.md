@@ -1,1 +1,3 @@
-# Autonomous-Drone-Tracking-Surveillance-Turret
+Syracuse: Autonomous Turret System for Drone
+Detection & Tracking and Real-time Smart
+Surveillance
